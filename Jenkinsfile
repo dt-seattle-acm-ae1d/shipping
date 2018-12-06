@@ -75,7 +75,7 @@ pipeline {
           }
         }
     }
-    /*
+    
     stage('Run health check in dev') {
       when {
         expression {
@@ -137,7 +137,7 @@ pipeline {
         }
       }
     }
-    */
+    
     stage('Mark artifact for staging namespace') {
       when {
         expression {

@@ -75,7 +75,7 @@ pipeline {
           }
         }
     }
-    
+    /*
     stage('Run health check in dev') {
       when {
         expression {
@@ -108,7 +108,7 @@ pipeline {
         }
       }
     }
-    /*
+    
     stage('Run functional check in dev') {
       when {
         expression {

@@ -75,6 +75,7 @@ pipeline {
           }
         }
     }
+    /*
     stage('Run health check in dev') {
       when {
         expression {
@@ -90,7 +91,7 @@ pipeline {
             def status = executeJMeter (  
               scriptName: 'jmeter/basiccheck.jmx', 
               resultsDir: "HealthCheck_${BUILD_NUMBER}",
-              serverUrl: "${env.APP_NAME}.dev.svc", 
+              serverUrl: "${env.APP_NAME}.dev", 
               serverPort: 80,
               checkPath: '/health',
               vuCount: 1,
@@ -136,6 +137,7 @@ pipeline {
         }
       }
     }
+    */
     stage('Mark artifact for staging namespace') {
       when {
         expression {

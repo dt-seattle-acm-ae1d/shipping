@@ -116,6 +116,7 @@ pipeline {
         }
       }
       steps {
+        sleep 180
         container('jmeter') {
           script {
             def status = executeJMeter ( 

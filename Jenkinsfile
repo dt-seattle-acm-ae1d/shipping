@@ -84,7 +84,7 @@ pipeline {
       }
       steps {
         echo "Waiting for the service to start..."
-        sleep 500
+        sleep 350
 
         container('jmeter') {
           script {
